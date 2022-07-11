@@ -1,7 +1,7 @@
 const statusButton = document.querySelector('button');
 const pets = document.querySelector('.all-pets');
 
-//A factor function to creat pets
+//A factory function to creates pets
 
 const createPet = function (name, species) {
   const pet = {
@@ -36,7 +36,8 @@ clover.isTired = 8;
 francine.isTired = 9;
 const allPets = [sora, clover, baxter, cleo, francine];
 
-// A function for adding updated pets to browser (called by click on statusButton)
+/* A function for adding updated pets to browser
+(called by click on statusButton) */
 
 const showPets = function (petArray) {
   //empty list
@@ -53,7 +54,7 @@ const showPets = function (petArray) {
   }
 };
 
-// listener to statusbutton and calling showPets
+// listener to statusButton
 
 statusButton.addEventListener('click', function () {
   showPets(allPets);
